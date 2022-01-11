@@ -1,8 +1,12 @@
 *{
-    margin: 0;
+    margin: 0px;
 } 
+
 body {
     color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     
 }
 
@@ -23,14 +27,48 @@ label .formlabel {
     font-style: bolder;
 }
 
+.search {
+    margin-left: -150px;
+    padding: 5px;
+    margin-bottom: -10px;
+}
+
 button {
     background-color: cornflowerblue;
     color: white;
-    margin: 20px 50px 50px 50px;
-    margin-right: -50px;
+    width: 100%;
+    border-bottom: solid 2px black;
+    
+}
+.col {
+    margin-bottom: 10px;
 }
 
-.col-sm-3 {
-    text-align: left;
-    float: left;
+.col-sm-9 {
+    border: solid black;
+}
+
+.col-sm-8 {
+    margin-left: -22px;
+}
+
+.col-form-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+.forecast {
+    border-bottom: none;
+}
+
+.card-group {
+    margin: -10px;
+    margin-top: 5px;
+    margin-left: -18px;
+}
+
+#search-history {
+    border-top: black solid 2px;
+    margin-top: -60px;
+    margin-left: 0px;
+    width: 90%;
 }
