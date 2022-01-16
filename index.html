@@ -4,53 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Future Forecast</title>
 </head>
-
 
 <body>
 <header class= "dashboard">
     <h1>Weather Dashboard</h1>
 </header>
 <div class="search">
-<div class= "container">
-    <div class="row mb-3">
-           <div class="col-sm-3">
-               <label for="inputCity" class="col col-form-label">Search for a City:</label>
+    <div class="row mb-3" id="selecting">
+               <form id = "select" class="col-sm-3">
+               <label for="inputCity" id="searchcity" class="col col-form-label">Search for a City:</label>
                <div class="col">
-                   <input type="city" class="form-control" id="inputCity" placeholder= "San Diego">
-               </div>
-               <div class="col">
-                   <button type="submit" class="btn btn-primary mb-3">Search</button>
-                    <span class="border-1"></span>
+                   <input name ="cityName" class="form-control" id="city" type = "text" placeholder= "San Diego">
+                   <button type="" class="btn btn-primary mb-3" id="submit-Button">Search</button>
+</form>
 </div>
-</div>               
-        <div class="col-sm-9" style="width:90rem">
-            <h3>:</h3>
-            <p class="city"></p>
-            <p class="temp">Temp:</p>
-            <p class="wind">Wind:</p>
-            <p class="humidity">Humidity:</p>
-            <p class="uv-index">UV Index:</p>
+</div>             
+<div class= "container">
+
+        <div class="col-sm-9" id="today">
+            <h2>:</h2>
+            <p class="dt"></p>
+            <h3>Temp:</h3>
+            <h4>Wind:</h4>
+            <h5>Humidity:</h5>
+            <h6>UV Index:</p>
         </div>
     </div>
     <div class="forecast">
         <div class= "container">
         <div class="row">
             <div class="col-sm-3">
+                <h2 class=""><span id="city-search-weather"></span></h2>
                 <div id="search-history" class="list-group">
-
                 </div>
             </div>
         <div class="col-sm-8"><h4>5-Day Forecast:</h4>
 
         <div class="card-group" style= "width:67rem">
             <div class="col-sm-2">
-                <div class="card">
+                <div class="card bg-primary">
                     <h5 class="card-title">Date</h5>
                     <p class="card-text"></p>
                     <p class="Temp">Temp:</p>
@@ -60,7 +56,7 @@
         </div>
         
         <div class="col-sm-2">
-        <div class="card">
+        <div class="card bg-primary">
             <h5 class="card-title">Date</h5>
             <p class="card-text"></p>
             <p class="Temp">Temp:</p>
@@ -69,7 +65,7 @@
         </div>
         </div>
         <div class="col-sm-2">
-        <div class="card">
+        <div class="card bg-primary">
             <h5 class="card-title">Date</h5>
             <p class="card-text"></p>
             <p class="Temp">Temp:</p>
@@ -78,7 +74,7 @@
         </div>
         </div>
         <div class="col-sm-2">
-        <div class="card">
+        <div class="card bg-primary">
             <h5 class="card-title">Date</h5>
             <p class="card-text"></p>
             <p class="Temp">Temp:</p>
@@ -87,7 +83,7 @@
         </div>
         </div>
         <div class="col-sm-2">
-        <div class="card">
+        <div class="card bg-primary">
                 <h5 class="card-title">Date</h5>
                 <p class="card-text"></p>
                 <p class="Temp">Temp:</p>
@@ -96,5 +92,8 @@
 </div>
 </div>
 </div>
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@ body {
     color: black;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     
 }
 
@@ -22,15 +21,19 @@ h1 {
     text-align: center;
 }
 
+.list-group {
+    list-style: none;
+    padding: 0px;
+
+}
 label .formlabel {
     color: black;
     font-style: bolder;
 }
 
 .search {
-    margin-left: -150px;
+    margin-left: -5px;
     padding: 5px;
-    margin-bottom: -10px;
 }
 
 button {
@@ -46,6 +49,8 @@ button {
 
 .col-sm-9 {
     border: solid black;
+    margin-top: -160px;
+    margin-left: 260px;
 }
 
 .col-sm-8 {
@@ -72,3 +77,148 @@ button {
     margin-left: 0px;
     width: 90%;
 }
+
+#city-search-weather {
+    font-size: 20px;
+    color: black;
+}
+
+#search-history {
+    font-size: 20px;
+    color: black;
+    margin-left: -65px;
+    width: 105%;
+    
+}
+
+
+.list-group {
+    font-size: 20px;
+    color: black;
+}
+
+#city-search-weather {
+    font-size: 20px;
+    color: black;
+}
+
+@media screen and (max-width: 980px) {
+    .card-group {
+        width: 100%;
+        height: 25%;
+    }
+    .search {
+        width: 100%;
+    }
+    .row  {
+        width: 50%;
+
+    }
+    .col-sm-9 {
+        width: 50%;
+        margin-left: -15px;
+    }
+    .col-sm-2 {
+        width: 20rem;
+        height: 5%;
+
+    }
+
+    .card  {
+        width: 50%;
+        height: 50%;
+    }
+
+    .col-sm-8 {
+        width: 50%;
+        height: 50%;
+    }
+    .container {
+        width: 50%;
+        height: 50%;
+    }
+    #today {
+        width: 50%;
+    }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .card-group {
+            width: 100%;
+            height: 25%;
+
+        
+        }
+        .search {
+            width: 100%;
+        }
+        .row  {
+            width: 60%;
+    
+        }
+        .col-sm-9 {
+            width: 50%;
+        }
+        .col-sm-2 {
+            width: 50%;
+            height: 5%;
+
+        }
+        .col-sm-8 {
+            width: 50%;
+            height: 50%;
+        }
+        .container {
+            width: 50%;
+            height: 50%;
+        }
+      }
+       
+      
+      @media screen and (max-width: 575px) {
+        .search {
+            width: 100%;
+        }
+        .row {
+            width: 52%;
+    
+        }
+        
+         .col-sm-9 {
+             width: 100px;
+             margin-left: -80px;
+             margin-top: -200px;
+             width: 20rem;
+
+         }
+         .col-sm-2 {
+             width: 20%;
+         }
+         .col-sm-8 {
+            width: 50%;
+            height: 2%;
+            font-size: 10px;
+        }
+        .container {
+            width: 5%;
+            height: 10%;
+
+        }
+        h4 {
+            font-size: 15px;
+        }
+        #today {
+            width: 300px;
+            height: 180px;
+        }
+        #select {
+            width: 60%;
+        }
+        .forecast {
+            width: 80%;
+            
+        }
+         .card-group div{
+            height: 50%;
+        }
+        }
