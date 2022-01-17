@@ -13,7 +13,7 @@ var cityUser = function (event) {
     getUserCity(cityName);
 }
 var searchCity = function () {
-    var resultTyped = "http://api.openweathermap.org/data/2.5/weather?q=chicago,840" + "/city" + "&appid=" + apiKey;
+    var resultTyped = "https://api.openweathermap.org/data/2.5/weather?q=chicago,840" + "/city" + "&appid=" + apiKey;
     fetch(resultTyped).then(function(response) {
         if(response.ok) {
             console.log(response);
@@ -30,7 +30,7 @@ var searchCity = function () {
     
 }
 var getUserCity = function() {
-    var api = "http://api.openweathermap.org/data/2.5/weather?q=chicago,840" + "/city" + "&appid=" + apiKey;
+    var api = "https://api.openweathermap.org/data/2.5/weather?q=chicago,840" + "/city" + "&appid=" + apiKey;
 
     
     fetch(api).then(function(response) {
