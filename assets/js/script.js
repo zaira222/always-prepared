@@ -13,12 +13,11 @@ var cityUser = function (event) {
     getUserCity(cityName);
 }
 var searchCity = function () {
-    var resultsTyped = "http://api.openweathermap.org/data/2.5/weather?q=chicago,illinois,840" + city + "&appid=" + apiKey;
-    fetch(resultsTyped).then(function(response) {
+    var resultTyped = "http://api.openweathermap.org/data/2.5/weather?q=chicago,840" + city + "&appid=" + apiKey;
+    fetch(resultTyped).then(function(response) {
         if(response.ok) {
             console.log(response);
        response.json().then(function(data) {
-           console.log(data)
         getUserCity(data); 
        })
     } else    
@@ -31,10 +30,10 @@ var searchCity = function () {
     
 }
 var getUserCity = function() {
-    var apiWeatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=chicago,840" + city + "&appid=" + apiKey;
+    var api = "http://api.openweathermap.org/data/2.5/weather?q=chicago,840" + city + "&appid=" + apiKey;
 
     
-    fetch(apiWeatherUrl).then(function(response) {
+    fetch(api).then(function(response) {
         if(response.ok) {
             console.log(response);
        response.json().then(function(data) {
@@ -53,7 +52,7 @@ var getUserCity = function() {
 }
 
 var todayWeather = function(data, city) {
-    var citName = data
+    var cityName = data
  for (var i = 0; i < 1; i++) { 
 
      var citySearchWeatherEl = document.createElement("span");
@@ -74,7 +73,6 @@ var todayWeather = function(data, city) {
 }
 
 getUserCity();
-    
 
 selectEl.addEventListener("submit", todayWeather);
 
