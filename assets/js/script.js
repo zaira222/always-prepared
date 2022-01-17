@@ -4,12 +4,13 @@ var apiKey = "fb2240ea04f3fe606d4e76d86a8a7ae3"
 var cityInputEl = document.querySelector("#city");
 var citySearchWeatherEl = document.querySelector("#city-search-weather");
 var searchHistoryEl = document.querySelector("#search-history");
-
+var city = document.querySelector("cityName");
+var city = ""
 var cityUser = function (event) {
     event.preventDefault();
 
-    var userWord = cityInputEl.value.trim()
-    getUserCity(userWord);
+    var cityName = cityInputEl.value.trim()
+    getUserCity(cityName);
 }
 var searchCity = function () {
     var resultsTyped = "http://api.openweathermap.org/data/2.5/weather?q=chicago,illinois,840" + city + "&appid=" + apiKey;
@@ -18,7 +19,6 @@ var searchCity = function () {
             console.log(response);
        response.json().then(function(data) {
            console.log(data)
-           citySearchWeatherEl.textContent = city;
         getUserCity(data); 
        })
     } else    
@@ -53,16 +53,16 @@ var getUserCity = function() {
 }
 
 var todayWeather = function(data, city) {
-    var userWordEl = data
- for (var i = 0; i < city.length; i++) { 
+    var citName = data
+ for (var i = 0; i < 1; i++) { 
 
      var citySearchWeatherEl = document.createElement("span");
      citySearchWeatherEl.classList= "list-item";
 
-     var userWordEl = document.createElement("div");
-     userWordEl.textContent = city;
+     var cityName = document.createElement("div");
+     cityName.textContent = city;
 
-     citySearchWeatherEl.appendChild(userWordEl);
+     citySearchWeatherEl.appendChild(cityName);
 
      searchHistoryEl.appendChild(citySearchWeatherEl);
 
