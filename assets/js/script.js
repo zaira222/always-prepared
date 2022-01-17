@@ -19,7 +19,7 @@ var searchCity = function () {
        response.json().then(function(data) {
            console.log(data)
            citySearchWeatherEl.textContent = city;
-        getUserCity(data, userWord); 
+        getUserCity(data); 
        })
     } else    
     alert("Error: No city was found");
