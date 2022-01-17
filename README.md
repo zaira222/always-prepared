@@ -13,10 +13,9 @@ It will show you the current day and  the next five days as well.
 * JavaScript
 
 # Website
-
+* https://zaira222.github.io/always-prepared/
 # Mock-Up
-[myimage](zaira222.github.com/always-prepared/img/use.png) 
-
+![use](https://user-images.githubusercontent.com/94399039/149683750-ae432f77-be4d-432d-8eb8-cae641390771.png)
 
 # Contribution
 * Zaira
